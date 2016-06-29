@@ -10,6 +10,14 @@ This application only connects with servers that were compiled with mobile platf
  * nodejs 0.12
 
 #### Install dependencies
+If you are on OS X, execute the initialization script:
+```shell
+./init-osx.sh
+```
+which will take care of installing the required XCode Command Line Tools (if not already installed) and everything needed to run cordova app.
+
+
+For other platforms:
 ```shell
 sudo npm install cordova coffee-script -g
 npm install
