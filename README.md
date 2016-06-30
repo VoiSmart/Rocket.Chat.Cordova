@@ -5,19 +5,24 @@ Rocket.Chat Cross-Platform Mobile Application via Cordova
 This application only connects with servers that were compiled with mobile platforms enabled
 
 # How to run
+## OS X
+If you are on OS X, execute the initialization script (change `BUGSNAG-API-KEY` and `ANDROID-SENDER-ID` accordingly):
+```shell
+./init-osx.sh "BUGSNAG-API-KEY" "ANDROID-SENDER-ID"
+```
+which will take care of installing the latest node.js, npm, the required XCode Command Line Tools (if not already installed) and everything needed to run the cordova app.
+
+After that, you can open the XCode project with:
+```shell
+./open-xcode-project.sh
+``` 
+
+## Manual instructions
 #### Requirements
  * npm
  * nodejs 0.12
 
 #### Install dependencies
-If you are on OS X, execute the initialization script:
-```shell
-./init-osx.sh
-```
-which will take care of installing the required XCode Command Line Tools (if not already installed) and everything needed to run cordova app.
-
-
-For other platforms:
 ```shell
 sudo npm install cordova coffee-script -g
 npm install
