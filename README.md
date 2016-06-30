@@ -23,6 +23,29 @@ sudo npm install cordova coffee-script -g
 npm install
 ```
 
+### How to refactor app package name
+```shell
+cordova platform remove android
+cordova platform remove ios
+vim config.xml 
+```
+Then refactor:
+```xml
+<widget android-versionCode="236" 
+        id="com.voismart.chat"
+        ios-CFBundleVersion="4"
+        version="2.3.2" 
+        xmlns="http://www.w3.org/ns/widgets" 
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+```
+by changing `com.voismart.chat` to the desired package name and then execute:
+```shell
+cordova platform add android
+cordova platform add ios
+cordova prepare
+cordova build ios
+```
+
 ### Create Conf files
 ```
 echo 'Bugsnag.apiKey = "YOUR-API-KEY-HERE";' > www/js/bugsnag_apikey.js
