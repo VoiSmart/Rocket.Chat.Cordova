@@ -1,3 +1,5 @@
 #!/bin/bash
-cordova platform update android
-cordova platform update ios
+cordova platform remove android
+cordova platform remove ios
+cordova platform add android
+cordova platform add ios
