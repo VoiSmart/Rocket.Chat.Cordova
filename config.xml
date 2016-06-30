@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget android-versionCode="236" id="com.konecty.rocket.chat" ios-CFBundleVersion="4" version="2.3.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Rocket.Chat</name>
+    <name>VoiSmart Chat</name>
     <description>
-        Rocket.Chat mobile application
+        VoiSmart Chat mobile application
     </description>
-    <author email="support@rocket.chat" href="http://rocket.chat">
-        Rocket.Chat
+    <author email="develop@voismart.it" href="http://www.voismart.it">
+        VoiSmart Chat
     </author>
     <content src="index.html" />
     <allow-intent href="http://*/*" />
@@ -107,7 +107,7 @@
     <plugin name="cordova-plugin-statusbar" spec="2.1.2" />
     <plugin name="cordova-plugin-facebook4" spec="1.7.0">
         <variable name="APP_ID" value="835103589938459" />
-        <variable name="APP_NAME" value="Rocket.Chat" />
+        <variable name="APP_NAME" value="VoiSmart Chat" />
     </plugin>
     <plugin name="cordova-plugin-rocket-chat" spec="https://github.com/RocketChat/cordova-plugin-rocket-chat" />
     <plugin name="phonegap-plugin-push" spec="~1.4.2" />
