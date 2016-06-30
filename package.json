@@ -1,7 +1,7 @@
 {
-  "name": "rocket.chat.cordova",
+  "name": "com.voismart.chat",
   "version": "0.0.1",
-  "description": "Rocket.Chat mobile applications",
+  "description": "VoiSmart Chat mobile applications",
   "main": "index.js",
   "dependencies": {
     "async": "^1.5.2",
