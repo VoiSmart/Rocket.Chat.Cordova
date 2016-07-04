@@ -194,7 +194,9 @@ window.loadLastActiveServer = ->
 
 
 document.addEventListener "deviceready", ->
-	navigator.appInfo.getAppInfo (appInfo) ->
+        window.open = cordova.InAppBrowser.open	
+
+        navigator.appInfo.getAppInfo (appInfo) ->
 		Bugsnag.appVersion = appInfo.version
 		Bugsnag.metaData.version = appInfo.version
 		Bugsnag.metaData.build = appInfo.build
