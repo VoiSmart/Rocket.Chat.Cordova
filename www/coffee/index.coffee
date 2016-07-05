@@ -194,13 +194,12 @@ window.loadLastActiveServer = ->
 
 
 document.addEventListener "deviceready", ->
-        window.open = cordova.InAppBrowser.open	
-
-        navigator.appInfo.getAppInfo (appInfo) ->
+	navigator.appInfo.getAppInfo (appInfo) ->
 		Bugsnag.appVersion = appInfo.version
 		Bugsnag.metaData.version = appInfo.version
 		Bugsnag.metaData.build = appInfo.build
 
+	window.open = cordova.InAppBrowser.open
 	queryString = location.search.replace(/^\?/, '')
 	query = {}
 	if queryString.length > 0

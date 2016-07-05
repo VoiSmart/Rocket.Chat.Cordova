@@ -6,6 +6,9 @@ sed -i -e 's/com.google.android.gms:play-services-plus:+/com.google.android.gms:
 sed -i -e 's/com.google.android.gms:play-services-identity:+/com.google.android.gms:play-services-identity:9.0.2/g' plugins/cordova-plugin-googleplus/plugin.xml
 sed -i -e 's/com.google.android.gms:play-services-gcm:+/com.google.android.gms:play-services-gcm:9.0.2/g' plugins/phonegap-plugin-push/plugin.xml
 
+#Patch InAppBrowser for voismart protocol support
+cp -a InAppBrowserVoiSmartPatched.java plugins/cordova-plugin-inappbrowser/src/android/InAppBrowser.java
+
 cordova platform remove android
 cordova platform remove ios
 cordova platform add android
