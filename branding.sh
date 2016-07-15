@@ -7,6 +7,9 @@ then
     sed -i '' 's/VoiSmart Chat mobile application/TIM chat/g' config.xml
     sed -i '' 's@http://www.voismart.it@http://www.tim.it@g' config.xml
     sed -i '' 's/VoiSmart Chat/TIM chat/g' config.xml
+	cp -a $1/assets/* assets/
+	cp -a $1/icons/* www/icons/
+	cp -a $1/img/* www/img/
 else
     echo "Unknown branding $1"
 fi
